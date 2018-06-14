@@ -1,3 +1,9 @@
+# 
+# Travis Langston
+# 6/14/2018
+# 
+# This is a solution to a problem from the UIL District 1 2012 Programming Competition. 
+# It reads in a list of Facebook names, and shortens them to be used in the game Words With Friends. 
 def main():
     f = open("words.dat", "r")
 
