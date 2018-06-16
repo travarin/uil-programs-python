@@ -7,7 +7,7 @@ Implements the solution to problem 5 from the UIL District 1 2012 Programming Co
 def main():
     f = open("decreasing.dat", "r")
     cases = int(f.readline())
-    for i in range(1, cases+1):
+    for i in range(0, cases):
         base     = int(f.readline())
         multiple = base + base
         while not check_increasing(str(multiple)): 
