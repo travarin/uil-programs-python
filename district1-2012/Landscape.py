@@ -10,7 +10,7 @@ def main():
     pictures = int(f.readline())
     for i in range(0, pictures):
         picture = list(islice(f, 10))
-        for col in range(14, -1, -1):
+        for col in reversed(range(15)):
             for row in picture:
                 print (row[col], end='')
             print ()
