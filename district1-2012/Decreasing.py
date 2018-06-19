@@ -13,6 +13,7 @@ def main():
         while not check_increasing(str(multiple)): 
             multiple += base
         print (multiple)
+    f.close()
 
 def check_increasing(num):
     prev = num[0]

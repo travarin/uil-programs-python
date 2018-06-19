@@ -16,6 +16,7 @@ def main():
         for x in name[1:]:
             result += " " + x[0]
         print (result)
+    f.close()
 
 
 if __name__ == "__main__":

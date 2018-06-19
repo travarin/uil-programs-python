@@ -15,6 +15,7 @@ def main():
              if time[:2] < min[:2] or time[:2] == min[:2] and (time[3:5] < min[3:5] or time[3:5] == min[3:5] and time[6:] < min[6:]):
                 min = time
         print (name + " " + min)
+    f.close()
 
 if __name__ == "__main__":
   main()

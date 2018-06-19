@@ -16,6 +16,7 @@ def main():
             print ()
         print ()
         f.readline()
+    f.close()
 
 
 if __name__ == "__main__":

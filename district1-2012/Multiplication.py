@@ -15,6 +15,7 @@ def main():
         for digit in reversed(nums[1]):
             print (str(r * int(digit)) + " ", end='')
         print (r * s)
+    f.close()
 
 
 if __name__ == "__main__":
