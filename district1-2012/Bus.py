@@ -17,8 +17,7 @@ def main():
             if passengers == min_passengers:
                 sections.append(chr(i // 2 + 98))
             elif passengers < min_passengers:
-                sections = []
-                sections.append(chr(i // 2 + 98))
+                sections = [chr(i // 2 + 98)]
                 min_passengers = passengers
         for section in sections:
             print (section.upper() + " ", end='')
