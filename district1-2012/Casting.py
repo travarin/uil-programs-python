@@ -9,24 +9,17 @@ def main():
     nums = int(f.readline())
     for i in range(nums):
         num = f.readline()
-        if find_sum(num[:-1]) <= 9:
-            print (0)
-        else: 
-            print (find_degree(num[:-1], 1))
+        print (find_degree(num[:-1], True))
     f.close()
 
-def find_sum(num):
+def find_degree(num, first):
     sum = 0
     for digit in num:
         sum += int(digit)
-    return sum
-
-def find_degree(num, degree):
-    sum = find_sum(num)
     if sum <= 9:
-        return degree
+        return 0 if first else 1
     else:
-        return find_degree(str(sum), degree + 1)
+        return find_degree(str(sum), False) + 1
 
 if __name__ == "__main__":
   main()
