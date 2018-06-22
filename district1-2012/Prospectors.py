@@ -29,19 +29,17 @@ def main():
     f.close()
 
 def find_plots(section, used, row, col):
-    if used[row][col] == True:
-        return 0
-    used[row][col] = True
     if section[row][col] != "*":
         return 0
+    used[row][col] = True
     sum = 5
-    if row > 0:
+    if row > 0 and used[row-1][col] != True:
         sum += find_plots(section, used, row - 1, col)
-    if col > 0:
+    if col > 0 and used[row][col-1] != True:
         sum += find_plots(section, used, row, col - 1)
-    if row < len(section) - 1:
+    if row < len(section) - 1 and used[row+1][col] != True:
         sum += find_plots(section, used, row + 1, col)
-    if col < len(section[0]) - 2:
+    if col < len(section[0]) - 2 and used[row][col+1] != True:
         sum += find_plots(section, used, row, col + 1)
     return sum
 
