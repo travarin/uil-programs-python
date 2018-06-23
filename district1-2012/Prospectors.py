@@ -1,6 +1,6 @@
 """ Reads in info for plots of land, and calculates how many acres are in each unclaimed plot of land. 
 
-Implements the solution to Problem 10 of the UIL District 1 2012 Programming Competition. 
+Implements the solution to Problem 10 of the UIL District 1 2012 Programming Competition. 6/21/2018
 
 """
 from itertools import islice
