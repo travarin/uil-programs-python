@@ -1,6 +1,6 @@
 """ Reads in info about lights on a binary clock, and converts it to a base 10 format. 
 
-Implements the solution to Problem 1 of the UIL District 2 2012 Programming Competition. 
+Implements the solution to Problem 1 of the UIL District 2 2012 Programming Competition. 6/24/2018 
 
 """
 from itertools import islice
