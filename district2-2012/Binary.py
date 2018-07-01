@@ -9,7 +9,7 @@ def main():
     f = open("binary.dat", "r")
     cases = int(f.readline())
     for i in range(cases):
-        clock = list((islice(f, 4)))
+        clock = list(islice(f, 4))
         base_10 = ""
         for col in range(6):
             bin = ""
