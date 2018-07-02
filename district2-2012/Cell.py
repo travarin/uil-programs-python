@@ -14,7 +14,7 @@ def main():
         bSum += math.ceil(float(line))
     print ("PLAN A: " + str(aSum))
     print ("PLAN B: " + str(bSum))
-
+    f.close()
 
 if __name__ == "__main__":
     main()

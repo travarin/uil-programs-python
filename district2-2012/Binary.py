@@ -18,6 +18,7 @@ def main():
                 bin += bit if bit == "*" or bit == "o" else ""
             base_10 += binary_to_dec(bin)
         print (base_10[:2] + ":" + base_10[2:4] + ":" + base_10[4:])
+    f.close()
 
 def binary_to_dec(bin):
     exp = 1

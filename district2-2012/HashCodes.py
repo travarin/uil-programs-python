@@ -12,6 +12,7 @@ def main():
         letters = int(line[0])
         code    = int(line[1])
         print (find_collisions(letters, code, 0))
+    f.close()
 
 
 def find_collisions(letters, code, prev):
